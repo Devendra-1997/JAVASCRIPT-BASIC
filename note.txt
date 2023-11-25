@@ -1,1 +1,13 @@
-primitive data type and referential data types inerview asked questions
+primitive data type and referential data types interview asked questions
+
+
+call stack
+call back queue 
+event loop
+
+
+
+Data manipulation 
+
+object 
+property and value

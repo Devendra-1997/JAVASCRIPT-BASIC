@@ -1,14 +1,14 @@
 // single linke comment
 /**
 multi line comment 
-alert("helowowow");
+alert("hellow");
 console.log("heyheheh");
  */
 
 //=== Variable (only char, num, $ _)
 // var let const
 
-// var firstName = "Prem Acharya";
+// var firstName = "Devendra Dhakal";
 // let add = "somewhere in sydney";
 // const dob = "2020";
 
@@ -65,19 +65,19 @@ console.log("heyheheh");
 
 // ===== Data types
 // Primitives
-// String  		// “prem acharya”
+// String  		// “devendra dhakal”
 // Number 	//123
 // Boolen		// true or false
 // Undefined	// not defined in system memory
 // Null  		// defined in system memory but no value assigned
 
-// const val = "prem ";
-// const val = "prem";
+// const val = "devendra ";
+// const val = "devendra";
 // const val = 1234567890;
 // const val = undefined;
 // const val = null;
 
-// let name = "Prem";
+// let name = "devendra";
 
 // console.log(name);
 // const pN = name;
@@ -96,7 +96,7 @@ console.log("heyheheh");
 
 //OBJECT
 // const person = {
-//   name: "prem",
+//   name: "devendra",
 //   add: "sydney",
 //   dob: 444,
 // };
@@ -105,7 +105,7 @@ console.log("heyheheh");
 
 // let person = {
 
-//   name: "prem",
+//   name: "devendra",
 // };
 
 // console.log(person);
@@ -141,8 +141,8 @@ console.log("heyheheh");
 //// falsey: "", 0, NaN, false, undefined, null
 
 // If
-const age = 30;
-const g = "m";
+// const age = 30;
+// const g = "m";
 
 // if (age >= 18 && g == "f") {
 // if (age && g) {
@@ -315,21 +315,270 @@ const g = "m";
 // } while (i > 10);
 
 // challange0:
-console.log("1. first one");
+// console.log("1. first one");
 
-const hehe = () => {
-  console.log("2. hehe fuctioin");
+// const hehe = () => {
+//   console.log("2. hehe fuctioin");
+// };
+// setTimeout(() => {
+//   console.log("3. set time out");
+// }, 5000);
+// const yoyo = () => {
+//   console.log("4. hehe fuctioin");
+// };
+// console.log("5. after yoyo");
+// yoyo();
+// setTimeout(() => {
+//   console.log("6. set time out");
+// }, 0);
+// hehe();
+// console.log("7. last line");
+
+//// JS- Data manipulation
+// Number : safe number range = -2^53 -1 to 2^53 -1
+
+// const num = 3_452_345_673_475_033_456;
+// console.log(num);
+
+//downcasting
+// const ans = +num;
+// NaN = not a number
+
+// const ans = parseInt(num);
+// const ans = parseFloat(num);
+
+//if ans is not "not a number" === ans is a number
+// isNaN(ans);
+//text
+
+// console.log(typeof ans, ans, isNaN(234)); //false
+
+// String
+// const str = "Hfsdfsd";
+
+// Escape character
+// const str = 'hi there my name is "devendradhakal", thank you';
+// const str = 'hi i\'m "devendradhakal", thank you';
+// const str = `hi i\'m "devendradhakal", thank\` you`;
+
+// const name = "Sam";
+// const age = 20;
+
+// const str = " Hi my name is " + name + "i'm " + age + "years old";
+// const str = `Hi my name is ${name} i'm a ${age} years old`;
+
+// Length
+
+// const value = str.length;
+
+// toUpperCase, toLowerCase
+// const value = str.toUpperCase();
+// const value = str.toLowerCase();
+
+// indexOf, lastIndexOf, search
+
+// const value = str[6];
+// const value = str.indexOf("a");
+// const value = str.lastIndexOf("a");
+// const value = str.search("Sam");
+
+// Slice, substring, substr
+// const value = str.slice(3, 5);
+// const value = str.slice(-3);
+// const value = str.substring(3, 5);
+
+// Replace, concat, trim
+
+// const value = str.replace("Sam", "devendra");
+// const value = str.replace("i", "u");
+// const value = str.replaceAll("i", "u");
+// const value = str.trim();
+// const value = str.concat(" => more info soon");
+
+// charAt, [], split
+// const value = str.includes("Sam");
+// const value = str.charAt(4);
+// const value = str.charCodeAt(0);
+// const value = str.split("i");
+
+// console.log(str);
+// console.log(value);
+
+// . Array[]
+// Length, push , pop, shift, unshift, toString, join, [], splice, slice, indexOf
+
+// const arg = ["kfl", 23, true, undefined, NaN, ["lkdfj", 33], {}, () => {}];
+
+// const fruits = ["banana", "apple", "orange", "pear"];
+// const veg = ["potato", "tomato"];
+// fruits.length
+
+// fruits.push("mango");
+// fruits.unshift("Pear");
+
+// const value = fruits.pop();
+// const value = fruits.shift();
+
+// const value = fruits.slice(1, 2);
+// const value = fruits.splice(3, 0, "watermelon");
+// const value = fruits.toString();
+// const value = fruits.join("|");
+// const value = fruits.indexOf("orange");
+
+// console.log(fruits);
+// Short, reverse
+// console.log(fruits.sort((a, b) => b - a));
+// console.log(fruits.reverse());
+
+// forEach, map
+// Filter, reduce, every
+// forOf, fill
+
+// for
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+
+// const newArg = [];
+// const arg = fruits.forEach((item, i) => {
+//   newArg.push(item.toUpperCase());
+// });
+
+// const arg = fruits.map((item, i) => {
+//   return "ID_" + item.toUpperCase();
+// });
+
+// const arg = fruits.map((item, i) => {
+//   console.log(item);
+//   if (item.includes("p")) {
+//     return item + " good";
+//   }
+// });
+
+// const arg = fruits.filter((item, i) => {
+
+//   return item.includes("p") // ture or false
+//   // if (item.includes("p")) {
+//   //   return true;
+//   // }
+// });
+
+// const arg = fruits.filter((item) => item.includes("p"));
+// const arg = [3, 2, 1, 5, 4];
+
+// const total = arg.reduce((subttl, item) => {
+//   return subttl + item;
+// }, 0);
+// console.log(total);
+
+// const ans = fruits.every((item) => item.includes("p"));
+
+// for (let item of fruits) {
+//   console.log(item);
+// }
+
+// const dt = Array(100).fill("❤️");
+// console.log(dt);
+
+// console.log(ans);
+
+// Challange #1
+// 1. create an array of 50 rando bumbers range between 1 and 100 programmatically
+
+// const numArr = [];
+
+// for (let i = 0; i < 50; i++) {
+//   const num = Math.floor(Math.random() * 100) + 1; //0 - 0.9999
+//   numArr.push(num);
+// }
+
+// // 2. sort the array in descending order
+// numArr.sort((a, b) => b - a);
+// console.log(numArr);
+
+// //3. Get the total value of the array
+// const total = numArr.reduce((subTtl, item) => subTtl + item, 0);
+// console.log(total);
+// //4. from the original array created above, create another 2 arrays that contains even or odd numbers individually
+// const evenNumber = numArr.filter((item) => item % 2 === 0);
+// const oddNumber = numArr.filter((item) => item % 2 !== 0);
+// // console.log(evenNumber, oddNumber);
+
+// //5. remove the duplicate number for the original array
+// // const noDupArg = [...new Set(numArr)];
+// const noDupArg = numArr.filter((item, i) => i === numArr.indexOf(item));
+// console.log(noDupArg);
+
+// #2 challange
+// 1. create an array of 50 unique random numbers range between 1 and 100 programmatically
+
+// const uniqueArg = []; // length 0
+// let i = 0;
+// while (uniqueArg.length < 90) {
+//   const num = Math.floor(Math.random() * 100) + 1;
+
+//   if (!uniqueArg.includes(num)) {
+//     uniqueArg.push(num);
+//   }
+//   console.log(i++);
+// }
+
+// console.log(uniqueArg.sort());
+
+// Objects{}
+// Property, assign, delete, convert to array, loop
+
+// const obj = {
+//   name: "devendra",
+//   phone: 3456,
+// };
+
+// console.log(obj);
+
+const person = {
+  name: "sam smith",
+  number: 3454,
+  add: "20 george st sydney",
+  married: false,
+  skills: ["html", "css", "javascript"],
+  parent: {
+    f: "harry",
+    m: "merry",
+  },
 };
-setTimeout(() => {
-  console.log("3. set time out");
-}, 5000);
-const yoyo = () => {
-  console.log("4. hehe fuctioin");
+
+// const value = person["name"];
+// const value = person.name;
+// const value = person.parent.m;
+// const value = person.skills[2];
+
+// person.age = 33; // adding
+// person.number = "042352"; // override
+// person.parent.gar = "someone";
+// person.skills.push("kjhg");
+
+// delete person.parent;
+
+// console.log(person);
+const p1 = {
+  name: "Devendra",
+  age: 22,
+  phone: "345",
 };
-console.log("5. after yoyo");
-yoyo();
-setTimeout(() => {
-  console.log("6. set time out");
-}, 0);
-hehe();
-console.log("7. last line");
+
+// const p2 = p1; // refrencing to the same data in the memory
+// const p2 = Object.assign({}, p1);
+// const p2 = { ...p1 };
+
+// p1.age = 44;
+
+// console.log(p1);
+// for (let key in p1) {
+//   const value = p1[key];
+//   console.log(key, value);
+// }
+
+// const keys = Object.keys(p1);
+// const values = Object.values(p1);
+const entires = Object.entries(p1);
+console.log(entires);
