@@ -560,11 +560,11 @@ const person = {
 // delete person.parent;
 
 // console.log(person);
-const p1 = {
-  name: "Devendra",
-  age: 22,
-  phone: "345",
-};
+// const p1 = {
+//   name: "Devendra",
+//   age: 22,
+//   phone: "345",
+// };
 
 // const p2 = p1; // refrencing to the same data in the memory
 // const p2 = Object.assign({}, p1);
@@ -580,5 +580,148 @@ const p1 = {
 
 // const keys = Object.keys(p1);
 // const values = Object.values(p1);
-const entires = Object.entries(p1);
-console.log(entires);
+// const entires = Object.entries(p1);
+// console.log(entires);
+
+// Arrow function
+// const myFunction = (devendra, dhakal) => {
+//   console.log(devendra, dhakal);
+// };
+
+// const output = myFunction("devendra is my name", 99);
+// console.log(output);
+
+// const p1 = {
+//   name: "Sam",
+//   age: 22,
+//   phone: "345",
+//   email: "skdljf@mail",
+//   m: "Terisa",
+//   f: "John",
+// };
+
+// const p2 = {
+//   name: "Harry",
+//   age: 42,
+//   phone: "888",
+//   email: "sfs@mail.com",
+//   m: "Merry",
+//   f: "Sam",
+// };
+
+// const career = {
+//   job: "fsd",
+//   pay: 100,
+// };
+// Destructuring
+
+// const name = p2.name;
+// const age = p2.age;
+// const { name, age } = p2;
+// const { m, f, ...newObj } = p2;
+
+// delete p2.m;
+// console.log(newObj);
+//  const newP =
+
+// const parentInfo = ({ m, f }) => {
+//   return ` And their parent name is ${f} and ${m}`;
+// };
+
+// const bio = (obj) => {
+//   console.log(obj);
+//   const { name, age, phone = "0987654", ...rest } = obj;
+
+//   return (
+//     `This is all about a peron called ${name}. He is ${age} years old. You can call him anytime at ${phone}` +
+//     parentInfo(rest)
+//   );
+// };
+
+// const samBio = bio(p1);
+// console.log(samBio);
+
+// const harryBio = bio(p2);
+// console.log(harryBio);
+
+// Default + Rest + Spread
+
+// const fullInfo = {
+//   ...p2,
+//   ...career,
+// };
+
+// console.log(fullInfo);
+
+// const arr1 = [23, 45, 6, 7, 67];
+// const arr2 = ["lklj", "kljhg", "kl"];
+// const newArg = [...arr1, ...arr2];
+
+// console.log(newArg);
+
+//// Date()
+
+// const dt = new Date("1990-10-24");
+// const nowTime = Date.now() / (1000 * 60 * 60 * 24 * 365);
+// Formate
+// const timing = dt.toDateString();
+// const timing = dt.toLocaleDateString();
+// const timing = dt.toLocaleTimeString();
+
+// Get Methods
+// const timing = dt.getDate();
+// const timing = dt.getDay();
+// const timing = dt.getMonth();
+// const timing = dt.getFullYear();
+// console.log(timing);
+
+// Set Methods
+// console.log(dt.toLocaleDateString());
+// dt.setDate(dt.getDate() - 5);
+// console.log(dt.toLocaleDateString());
+
+// const today = new Date()
+
+// ========
+// challange #3:
+// - create food object that contains the name and exp date of the food
+// const foods = [
+//   {
+//     name: "A2 Milk",
+//     exp: "2023-11-24",
+//   },
+//   {
+//     name: "Tuna",
+//     exp: "2023-12-24",
+//   },
+//   {
+//     name: "Fish",
+//     exp: "2023-12-22",
+//   },
+//   {
+//     name: "sugar",
+//     exp: "2022-12-24",
+//   },
+// ];
+
+// - create a function that takes food object that create above and return on of the following:
+// const aDay = 1000 * 60 * 60 * 24;
+// const checkExp = ({ name, exp }) => {
+//   const today = Date.now();
+//   const expDate = new Date(exp).getTime();
+
+//   const diffDay = (expDate - today) / aDay;
+//   if (diffDay < 1) {
+//     return `${name} is expired ${Math.floor(Math.abs(diffDay))} days ago`;
+//   } else {
+//     return ` You have ${Math.floor(diffDay)}  days to use the ${name}`;
+//   }
+
+//   // 1.if food expired: ABC is expired 4 days ago
+//   // 2. if not expired: You have 10 days to use this product.
+// };
+
+// foods.forEach((item) => {
+//   const expireData = checkExp(item);
+//   console.log(expireData);
+// });
