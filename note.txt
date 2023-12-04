@@ -11,3 +11,7 @@ Data manipulation
 
 object 
 property and value
+
+
+
+oop paradigm vs fp paradigm - interview question
